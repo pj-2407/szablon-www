@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proste Przepisy – Start</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Proste Przepisy</a>
+            <button class="menu-toggle" aria-label="Otwórz menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Start</a></li>
+                <li><a href="recipes.html">Przepisy</a></li>
+                <li><a href="instrukcje.html">Instrukcje</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
+    <main>
+        <section class="hero">
+            <h2>Cześć! Gotujmy prosto i smacznie</h2>
+            <p>Znajdziesz tu szybkie przepisy z prostych składników.</p>
+            <div class="hero-actions">
+                <a class="btn" href="recipes.html">Zobacz przepisy</a>
+                <a class="btn btn-secondary" href="instrukcje.html">Jak dodać przepis?</a>
+            </div>
+        </section>
 
-  <body>
+        <section class="recent-recipes">
+            <h2>Polecane</h2>
+            <div class="recipe-cards">
+                <article class="card">
+                    <img src="images/chocolate-cake.jpg" alt="Czekoladowe ciasto">
+                    <div class="card-body">
+                        <h3>Czekoladowe ciasto</h3>
+                        <p>Miękkie i mega czekoladowe. Idealne na weekend.</p>
+                        <a class="btn" href="recipes/chocolate-cake.html">Zobacz przepis</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/pasta.jpg" alt="Kremowy makaron pomidorowy">
+                    <div class="card-body">
+                        <h3>Kremowy makaron pomidorowy</h3>
+                        <p>Prosty sos + makaron = szybka kolacja.</p>
+                        <a class="btn" href="recipes/creamy-pasta.html">Zobacz przepis</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-  </body>
-  
+    <footer>
+        <p>&copy; 2025 Proste Przepisy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
