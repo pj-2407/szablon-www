@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instrukcje – Jak dodać przepis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html">Proste Przepisy</a>
+      <button class="menu-toggle" aria-label="Otwórz menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="recipes.html">Przepisy</a></li>
+        <li><a href="instrukcje.html" class="active">Instrukcje</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="single-recipe">
+      <h3>Jak dodać nowy przepis</h3>
+      <ol>
+        <li>Skopiuj plik <code>recipes/_szablon.html</code> i zmień nazwę na np. <code>recipes/nazwa-przepisu.html</code>.</li>
+        <li>W nowym pliku uzupełnij: tytuł, czasy, zdjęcie, składniki i kroki.</li>
+        <li>Dodaj zdjęcie do folderu <code>images/</code> (np. <code>images/nazwa.jpg</code>).</li>
+        <li>Na stronie <code>recipes.html</code> dodaj nową kartę (box) z obrazkiem, krótkim opisem i przyciskiem <em>„Zobacz przepis”</em>, który linkuje do Twojego pliku.</li>
+        <li>(Opcjonalnie) Dodaj kartę również na stronie głównej <code>index.html</code> w sekcji „Polecane”.</li>
+      </ol>
+
+      <h4>Przykład karty do skopiowania</h4>
+<pre><code>&lt;article class="card"&gt;
+  &lt;img src="images/nazwa.jpg" alt="Krótki opis"&gt;
+  &lt;div class="card-body"&gt;
+    &lt;h3&gt;Tytuł przepisu&lt;/h3&gt;
+    &lt;p&gt;1–2 zdania opisu.&lt;/p&gt;
+    &lt;a class="btn" href="recipes/nazwa-przepisu.html"&gt;Zobacz przepis&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+
+      <p>To wszystko! Pamiętaj, żeby linki i nazwy plików się zgadzały.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Proste Przepisy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

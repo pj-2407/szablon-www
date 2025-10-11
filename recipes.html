@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przepisy – Lista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">Proste Przepisy</a>
+            <button class="menu-toggle" aria-label="Otwórz menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="recipes.html" class="active">Przepisy</a></li>
+                <li><a href="instrukcje.html">Instrukcje</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Wszystkie przepisy</h2>
+        <div class="recipe-cards">
+            <article class="card">
+                <img src="images/chocolate-cake.jpg" alt="Czekoladowe ciasto">
+                <div class="card-body">
+                    <h3>Czekoladowe ciasto</h3>
+                    <p>Miękkie, wilgotne i bardzo czekoladowe. Mniam!</p>
+                    <a class="btn" href="recipes/chocolate-cake.html">Zobacz przepis</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/pasta.jpg" alt="Kremowy makaron pomidorowy">
+                <div class="card-body">
+                    <h3>Kremowy makaron pomidorowy</h3>
+                    <p>Szybki sos śmietanowo-pomidorowy. Idealny po szkole.</p>
+                    <a class="btn" href="recipes/creamy-pasta.html">Zobacz przepis</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Proste Przepisy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
